@@ -1,16 +1,9 @@
 const path = require('path')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+
 
 module.exports = {
   entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-  devServer: {
-    static: path.resolve(__dirname, 'dist'),
-    port: 8080,
-    hot: true
-  },
   module: {
     rules: [
       {
@@ -19,6 +12,7 @@ module.exports = {
           {
             loader: 'style-loader'
           },
+          
           {
             loader: 'css-loader'
           },
@@ -37,16 +31,24 @@ module.exports = {
             loader: 'sass-loader'
           },
           
+          
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.html$/,
+        use: ["html-loader"]
+      },
+      
+
     ],
   },
+  plugins:[new HtmlWebpackPlugin({
+    template: './src/template.html',
+    
+  })],
+
 };

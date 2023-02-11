@@ -1,12 +1,8 @@
 import _ from 'lodash'
 import './scss/styles.scss'
 import './css/styles.css'
-import Alert from 'bootstrap/js/dist/alert'
-import boolbreakfast from './boolbreakfast.jpg'
-import bowllunch from './bowllunch.jpg'
-import bowlsupper from './bowlsupper.jpg'
-import burgers from './burgers.jpg'
-import fruits from './fruits.jpg'
+import "./font.js"
+
 
 // or, specify which plugins you need:
 import { Tooltip, Toast, Popover } from 'bootstrap'

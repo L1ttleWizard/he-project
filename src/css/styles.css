@@ -1,16 +1,16 @@
 .breakfast {
-    background-image: url('../boolbreakfast.jpg');
+    background-image: url('../imgs/boolbreakfast.jpg');
     background-position: center center;
     background-size:cover;
 }
 
 .lunch {
-    background-image: url('../bowllunch.jpg');
+    background-image: url('../imgs/bowllunch.jpg');
     background-position: center center;
     background-size:cover;
 }
 .supper{
-    background-image: url('../bowlsupper.jpg');
+    background-image: url('../imgs/bowlsupper.jpg');
     background-position: center center;
     background-size:cover;
 }
