@@ -28,3 +28,4 @@ document.querySelector('.thed').addEventListener('click',()=>{
 const myModal = document.getElementById('myModal')
 const myInput = document.getElementById('myInput')
 
+
