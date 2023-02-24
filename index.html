@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script> -->
-    
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="features.css">
     
 </head>
 
@@ -45,14 +45,14 @@
             </div>
         </div>
     </header>
-    <div class="container container-fluid">
+    <div class="container">
         <div class="container px-4 py-5" id="custom-cards">
             <h2 class="pb-2 border-bottom">Приемы пищи</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden breakfast text-bg-dark rounded-4 shadow-lg"
-                        >
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('boolbreakfast.jpg');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Завтрак</h3>
                             <ul class="d-flex list-unstyled mt-auto">
@@ -91,8 +91,8 @@
                   </div>
                 
                 <div class="col">
-                    <div class="card card-cover h-100 lunch overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        >
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('bowllunch.jpg');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Обед
                             </h3>
@@ -131,8 +131,8 @@
                   </div>
 
                 <div class="col">
-                    <div class="card card-cover h-100 supper overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        >
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('bowlsupper.jpg');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ужин</h3>
                             <ul class="d-flex list-unstyled mt-auto">
@@ -183,15 +183,12 @@
                          то огромное значение имеет не только то, что вы едите, но и когда вы это делаете.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="bd-placeholder-img h-auto  featurette-image  rounded-4 mx-auto img-thumbnail"   src="./imgs/burgers.jpg">
+                    <img class="bd-placeholder-img h-auto featurette-image  rounded-4 mx-auto img-fluid"   src="fruits.jpg">
                 </img>
                 </div>
             </div>
 
             <hr class="featurette-divider">
-
-
-
 
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
@@ -202,7 +199,7 @@
                         Но сначала попробуйте полностью перейти на ПП и подождите пару недель — положительный результат может прийти уже от смены рациона.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img h-auto featurette-image  rounded-4 mx-auto img-fluid"   src="./imgs/fruits.jpg">
+                    <img class="bd-placeholder-img h-auto featurette-image  rounded-4 mx-auto img-fluid"   src="burgers.jpg">
                 </img>
                 </div>
             </div>
@@ -221,8 +218,8 @@
                 <input type="text" class="form-control" id="floatingPassword" placeholder="Your Phone">
                 <label for="floatingPassword">Phone Number</label>
             </div>
-            <button class="w-100 btn btn-lg my-color btn-warning" type="submit" data-bs-theme-value="light">Отправить</button>
-            <hr class="my-4">       
+            <button class="w-100 btn btn-lg btn-warning" type="submit" data-bs-theme-value="light">Отправить</button>
+            <hr class="my-4">
         </form>
     </div>
     <div class="container">
@@ -238,7 +235,7 @@
             </a>
 
             <ul class="nav col-md-4 justify-content-end">
-                <li class="btn-warning btn"><a href="#" class="nav-link px-2 text-black margin-0">Go up <i
+                <li class="btn-warning btn"><a href="#" class="nav-link px-2 text-muted margin-0">Go up <i
                             class="fa-solid fa-arrow-up"></i></a></li>
             </ul>
 
@@ -250,4 +247,13 @@
   <!-- Modal -->
   
 </body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/9b6bf8116a.js" crossorigin="anonymous"></script>
+<script src="jq.js"></script>
+<script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
 </html>
