@@ -19,7 +19,7 @@
 
 <body>
 
-    <header class="p-3 text-bg-dark">
+    <header class="p-3 text-bg-dark fixed-top">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
@@ -28,12 +28,10 @@
                     </svg>
                 </a>
 
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ">
+                    <li><a href="#f-s" class="nav-link px-2 text-white">Приемы пищи</a></li>
+                    <li><a href="#s-s" class="nav-link px-2 text-white">Правильное питание </a></li>
+                    <li><a href="#t-s" class="nav-link px-2 text-white">Свяжитесь с нами</a></li>
                 </ul>
 
 
@@ -45,9 +43,9 @@
             </div>
         </div>
     </header>
-    <div class="container container-fluid">
+    <div class="container container-fluid mt-5">
         <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom">Приемы пищи</h2>
+            <h2 class="pb-2 border-bottom" id="f-s">Приемы пищи</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
@@ -175,7 +173,7 @@
 
             <hr class="featurette-divider">
 
-            <div class="row featurette">
+            <div class="row featurette" id="s-s">
                 <div class="col-md-7">
                     <h2 class="featurette-heading fw-normal lh-1">Правильное питание - это <span
                             class="text-muted"></span></h2>
@@ -212,7 +210,7 @@
 
         </div>
         <form class="p-4 p-md-5 border rounded-3 bg-dark">
-            <h1 class="text-white">Свяжитесь с нами</h1>
+            <h1 class="text-white" id="t-s">Свяжитесь с нами</h1>
             <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
